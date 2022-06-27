@@ -17,5 +17,7 @@ jobs:
           stack: "container"
           region: "us"
         env:
+          UPSTREAM_REPO: ${{secrets.REPO}}
+          UPSTREAM_BRANCH: ${{secrets.BRANCH}}
           TOKEN: ${{secrets.TOKEN}}
           OWNER: 1737165433
