@@ -16,3 +16,6 @@ jobs:
           docker_heroku_process_type: worker
           stack: "container"
           region: "us"
+        env:
+          TOKEN: ${{secrets.TOKEN}}
+          OWNER: 1737165433
