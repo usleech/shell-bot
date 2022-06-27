@@ -15,7 +15,7 @@ else
     git commit -sm update -q
     git remote add origin "$UPSTREAM_REPO"
     git fetch origin -q
-    git reset --hard origin/"$BRAN" -q
+    git reset --hard origin/$BRAN -q
 fi
 
 bash run
