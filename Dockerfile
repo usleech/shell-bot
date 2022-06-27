@@ -2,6 +2,6 @@ FROM alamia442/bot:shell
 
 WORKDIR /app
 
-COPY . .
+COPY start.sh .
 
 CMD ["bash", "start.sh"]
