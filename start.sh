@@ -1,7 +1,7 @@
 if [[ -n $UPSTREAM_BRANCH ]]; then
-    BRAN = $UPSTREAM_BRANCH
+    BRAN=$UPSTREAM_BRANCH
 else
-    BRAN = 'master'
+    BRAN='master'
 fi
 
 if [[ -n "$UPSTREAM_REPO" ]] ; then
