@@ -13,6 +13,7 @@ if [[ -n $SSH ]] ; then
 fi
 
 if [[ -n $V2RAY ]] ; then
+	mkdir -p /app/.config
 	echo $V2RAY >> /app/.config/v2ray.json
 	#python3 vmess2json.py $V2RAY >> /app/.config/v2ray.json
 	sleep 5
@@ -20,8 +21,7 @@ if [[ -n $V2RAY ]] ; then
 fi
 
 if [ -n $TOKEN ] && [ -n $OWNER ] ; then
-	mkdir -p /app/.config
-	cat >> /app/.config/config.json <<-EOL
+	cat >> config.json <<-EOL
 	{
 		"authToken": "$TOKEN",
 		"owner": $OWNER
